@@ -12,3 +12,5 @@ webdataset
 ftfy
 transformers
 pytorchvideo
+accelerate
+SentencePiece
