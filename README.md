@@ -69,11 +69,11 @@ Please note that this script automatically deletes each video once the video fra
 Finally, the downloaded HowTo100M dataset should also contain an annotation file named **HowTo100M_v1.csv**. Please process it to create a dictionary that maps video ids to their corresponding task labels which can be found in the file **task_ids.csv**. Save this dictionary as **vid2label.pkl** and store it in the same data directory as all_videos.pkl.
 
 #### Script
-Config the the checkpoint and dataset paths in [video_aggregation_finetune.yaml](./train_configs/video_aggregation_finetune.yaml).
+Config the the checkpoint and dataset paths in [video_aggregation_finetune.yaml](./koala/train_configs/video_aggregation_finetune.yaml).
 Run the script:
 ```
 conda activate koala-model
-python -W ignore train.py --cfg-path ./train_configs/video_aggregation_finetune.yaml --num_gpus {number of GPUs} --num_workers {worker threads} --batch_size {total batch size over number of GPUs}
+python -W ignore train.py --cfg-path ./koala/train_configs/video_aggregation_finetune.yaml --num_gpus {number of GPUs} --num_workers {worker threads} --batch_size {total batch size over number of GPUs}
 ```
 
 ### 2. Evaluation
@@ -87,7 +87,7 @@ python -W ignore eval_qa_egoschema.py --caption_output_dir {path to directory fo
 ```
 
 ## Launch Demo on Local Machine
-Set the `llama_model` (this is the path to the pretrained weights of the language model) in [eval_configs/conversation_demo.yaml](./eval_configs/conversation_demo.yaml) accordingly. 
+Set the `llama_model` (this is the path to the pretrained weights of the language model) in [koala/eval_configs/conversation_demo.yaml](./koala/eval_configs/conversation_demo.yaml) accordingly. 
 Then, you can launch the demo with the model on a local machine by running the script:
 ```
 python demo_video.py \

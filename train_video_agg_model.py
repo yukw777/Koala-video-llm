@@ -57,7 +57,7 @@ parser.add_argument('--saved_checkpoints_dir', type=str, default="./all_training
                     help='path to video dir')
 parser.add_argument('--tensorboard_path', type=str, default="./tensorboard_train_plots", metavar='VD',
                     help='path to video dir')
-parser.add_argument('--cfg-path', type=str, default="./train_configs/video_aggregation_finetune.yaml", metavar='CP',
+parser.add_argument('--cfg-path', type=str, default="./koala/train_configs/video_aggregation_finetune.yaml", metavar='CP',
                     help='path to model config file')
 parser.add_argument('--options', nargs="+", metavar='CP',
                     help="override some settings in the used config, the key-value pair "

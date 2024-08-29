@@ -42,7 +42,7 @@ parser.add_argument('--video_dir', type=str, default="/path/to/subsampled/frames
                     help='path to video dir which stores subsampled frames')
 parser.add_argument('--data_dir', type=str, default="/path/to/egoschema-annotations", metavar='DD',
                     help='path to dir that stores egoschema question and answer annotations')
-parser.add_argument('--cfg-path', type=str, default="./train_configs/video_aggregation_finetune.yaml", metavar='CP',
+parser.add_argument('--cfg-path', type=str, default="./koala/train_configs/video_aggregation_finetune.yaml", metavar='CP',
                     help='path to model config file')
 parser.add_argument('--options', nargs="+", metavar='CP',
                     help="override some settings in the used config, the key-value pair "

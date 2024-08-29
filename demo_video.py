@@ -30,7 +30,7 @@ from koala.tasks import *
 def parse_args():
     parser = argparse.ArgumentParser(description="Demo")
     #parser.add_argument("--cfg-path", required=True, help="path to configuration file.")
-    parser.add_argument("--cfg-path", type=str, default='./eval_configs/conversation_demo.yaml', help="path to configuration file.")
+    parser.add_argument("--cfg-path", type=str, default='./koala/eval_configs/conversation_demo.yaml', help="path to configuration file.")
     parser.add_argument("--gpu-id", type=int, default=0, help="specify the gpu to load the model.")
     parser.add_argument("--model_type", type=str, default='llama_v2', help="specify LLM")
     #parser.add_argument('--pretrained_weight_path', type=str, default="./ckpt/finetuned_model.pth", metavar='PWP',

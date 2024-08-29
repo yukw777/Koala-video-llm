@@ -1,1 +1,3 @@
 recursive-include koala/configs *.yaml
+recursive-include koala/train_configs *.yaml
+recursive-include koala/eval_configs *.yaml
